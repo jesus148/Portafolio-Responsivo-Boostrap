@@ -271,6 +271,21 @@ h1{
 .texto-blanco{
     color: white;
 }
+
+
+.btn-dark{
+    font-size: 1.1rem;
+    margin: 20px;
+    font-weight: bold;
+
+}
+
+.btn-dark i{
+    /* background-color: #12121280; */
+    color: #ffffff;
+    background-color: #10101040;
+    
+}
 .seccion-descripcion{
     font-size: 1.2rem;
     color: #584e46;
@@ -309,3 +324,51 @@ h1{
 .proyecto:hover .overlay{
     opacity: 1;
 }
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+
+/* adaptable responsivo para la parte de proyectos*/
+
+
+@media screen and ( max-width:400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+/* articulos */
+
+.articulos{
+    min-height: 500px;
+    padding: 30px;
+}
+.articulos .card{
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+
+}
+
+
+
+
+
+
