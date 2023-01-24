@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <!--metadatos-->
@@ -21,10 +21,12 @@
 
     <link rel="icon" href="imagenes/fondo.png" type="image/x-icon" >
 
-
+    <!-- apis de google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+
 </head>
 <body>
 
@@ -227,16 +229,16 @@ Sin .navbar-brandque se muestre en el punto de interrupción más pequeño: -->
          <img src="imagenes/fondo.png" alt="imagen" width="50"></a>
       <ul class="navbar-nav d-flex justify-content-center align-items-center">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">sobre mi</a>
+          <a class="nav-link" aria-current="page" href="#sobre-mi">sobre mi</a>
         </li>
         <li class="nav-item"> 
-          <a class="nav-link" href="#">proyectos</a>
+          <a class="nav-link" href="#proyectos">proyectos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">testimonios</a>
+          <a class="nav-link" href="#testimonios">testimonios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">contacto</a>
+          <a class="nav-link" href="#contacto">contacto</a>
         </li>
       </ul>
     
@@ -263,7 +265,7 @@ Sin .navbar-brandque se muestre en el punto de interrupción más pequeño: -->
 </section>
 
 <!-- sobre mi -->
-<section class="sobre-mi seccion-oscura">
+<section id="sobre-mi" class="sobre-mi seccion-oscura">
 
   <div class="contenedor">
     <h2 class="seccion-titulo texto-blanco">Conoce sobre el Desarollo Web</h2>
@@ -337,7 +339,7 @@ experiencia -->
 
 <!-- proyectos -->
 
-<section class="proyectos-recientes seccion-clara d-flex flex-column">
+<section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
   <h2 class="seccion-titulo texto-negro">Mis Proyectos recientes</h2>
   <h3 class="seccion-descripcion">estos son algunos proyectos que he creado recientemente</h3>
 
@@ -521,7 +523,7 @@ experiencia -->
 
 <!-- testimonios -->
 
-<section class="testimonios seccion-clara ">
+<section id="testimonios" class="testimonios seccion-clara ">
   <h2 class="seccion-titulo">Testimonios</h2>
   <h3 class="seccion-descripcion">Estos son algunos comentarios de usuarios</h3>
 
@@ -536,7 +538,7 @@ experiencia -->
       <div class="carousel-item active">
         <div class="container">
           <img src="./imagenes/cliente1.svg" class="testimonio-imagen rounded-circle"  alt="usuario jesus">
-          <p class="testimonio-texto">me encanta la forma en la que explicas y como configuras el video para que sea mas fácil de estudiar, no tengo dudas de que este canal tendrá un brillante futuro</p>
+          <p class="testimonio-texto">Mis felicitaciones y mis respetos a este joven profesional. Me gustaria si es posible, que incluyeras versiones mas avanzadas de estos cursos, ademas de incorporar ANGULAR y CODEIGNITER. </p>
           <div class="testimonio-info">
             <p class="cliente">Jesus</p>
             <p class="cargo">gerente de proyectos en desarolloWeb</p>
@@ -544,14 +546,30 @@ experiencia -->
           </div>
         </div>
 
-        
-        <img src="./imagenes/slider1.jpg" class="d-block w-100" alt="...">
+    
       </div>
       <div class="carousel-item">
-        <img src="./imagenes/slider2.jpg" class="d-block w-100" alt="...">
+        <div class="container">
+          <img src="./imagenes/cliente2.svg" class="testimonio-imagen rounded-circle"  alt="usuario isabel">
+          <p class="testimonio-texto">me encanta la forma en la que explicas y como configuras el video para que sea mas fácil de estudiar, no tengo dudas de que este canal tendrá un brillante futuro</p>
+          <div class="testimonio-info">
+            <p class="cliente">Isabel</p>
+            <p class="cargo">gerente de proyectos en desarolloWeb</p>
+
+          </div>
+        </div>
       </div>
       <div class="carousel-item">
-        <img src="./imagenes/slider3.jpg" class="d-block w-100" alt="...">
+        <div class="container">
+          <img src="./imagenes/cliente3.svg" class="testimonio-imagen rounded-circle"  alt="usuario blanca">
+          <p class="testimonio-texto">Muchas gracias! Jesus por el curso, estoy próximo a recibirme de analista en sistemas y me hubiese gustado tener profesores de tu calidad, sigue siempre así, divulgando los conocimientos, te estoy muy agradecido!
+          </p>
+          <div class="testimonio-info">
+            <p class="cliente">Hector</p>
+            <p class="cargo">gerente de proyectos en desarolloWeb</p>
+
+          </div>
+        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
@@ -568,6 +586,85 @@ experiencia -->
 </section>
 
 
+
+<!-- seccion de contacto -->
+
+<section id="contacto" class="contacto seccion-oscura">
+  <div class="container">
+
+    <div class="container text-center rectangulo d-flex justify-content-evenly">
+       <div class="row">
+        <div class="col-12 col-md-4 seccion-titulo">
+          hablemos
+        </div>
+        <div class="col-12 col-md-4 descripcion">
+          contacteme para inciar tu proyecto de desarolllo web y realizare tusa grandes objetivos
+
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="mailto:jorgecop149@gmail.com">
+            <button type="button">
+              Contacto
+              <i class="bi bi-envelope-at"></i>
+
+            </button>
+
+          </a>
+
+        </div>
+
+       </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+<!-- footer y redes sociales -->
+<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+  <img src="imagenes/icono-blanco.svg" alt="logo del portafolio" class="footer-logo">
+  <p class="footer-texto text-center justify-content-center">
+    Aprendo e innovo todos los dias <br>
+    Allways
+
+  </p>
+  <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+    <a href="https://github.com/jesus148" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/jesus-argel-huaman-angeles-73a74b25b/" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/the_developer_mode/?hl=es" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="mailto:jorgecop149@gmail.com" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-envelope-check-fill"></i>
+    </a>
+
+  </div>
+
+  <div class="derechos-de-autor">
+    Creado por Jesus Huaman Angeles(2023)
+     &#169;
+  </div>
+
+
+</footer>
 
 
 
@@ -590,4 +687,4 @@ experiencia -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
-</html> -->
+</html> 
